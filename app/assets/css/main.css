@@ -1,0 +1,95 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+@theme static {
+  /* Primary - Dark Blue */
+  --color-darkblue-50: #e6e6f0;
+  --color-darkblue-100: #b3b3d6;
+  --color-darkblue-200: #8080bc;
+  --color-darkblue-300: #4d4da3;
+  --color-darkblue-400: #262689;
+  --color-darkblue-500: #00008b;
+  --color-darkblue-600: #000080;
+  --color-darkblue-700: #000066;
+  --color-darkblue-800: #00004d;
+  --color-darkblue-900: #000033;
+
+  --color-turquoise-50: #ecfbfa;
+  --color-turquoise-100: #c5f3ef;
+  --color-turquoise-200: #9febe5;
+  --color-turquoise-300: #78e3db;
+  --color-turquoise-400: #52dbd1;
+  --color-turquoise-500: #40e0d0;
+  --color-turquoise-600: #3ac9bb;
+  --color-turquoise-700: #2e9e93;
+  --color-turquoise-800: #23736b;
+  --color-turquoise-900: #174843;
+
+  /* Primary - Corporate Blue */
+  --color-corporate-blue-50: #eef2ff;
+  --color-corporate-blue-100: #e0e7ff;
+  --color-corporate-blue-200: #c7d2fe;
+  --color-corporate-blue-300: #a5b4fc;
+  --color-corporate-blue-400: #818cf8;
+  --color-corporate-blue-500: #6366f1;
+  --color-corporate-blue-600: #4f46e5;
+  --color-corporate-blue-700: #4338ca;
+  --color-corporate-blue-800: #3730a3;
+  --color-corporate-blue-900: #1e40af;
+
+  /* Secondary - Corporate Slate */
+  --color-corporate-slate-50: #f8fafc;
+  --color-corporate-slate-100: #f1f5f9;
+  --color-corporate-slate-200: #e2e8f0;
+  --color-corporate-slate-300: #cbd5e1;
+  --color-corporate-slate-400: #94a3b8;
+  --color-corporate-slate-500: #64748b;
+  --color-corporate-slate-600: #475569;
+  --color-corporate-slate-700: #334155;
+  --color-corporate-slate-800: #1e293b;
+  --color-corporate-slate-900: #0f172a;
+}
+
+/* === Semantic Layer === */
+:root {
+  --color-bg: var(--color-corporate-slate-50);
+  --color-text: var(--color-corporate-slate-900);
+  --color-muted: var(--color-corporate-slate-500);
+  --color-border: var(--color-corporate-slate-200);
+  --color-hover: var(--color-corporate-slate-100);
+  --color-accent: var(--color-corporate-blue-100);
+  --color-link: var(--color-corporate-blue-900);
+}
+
+.dark {
+  --color-bg: var(--color-corporate-slate-800);
+  --color-text: var(--color-corporate-slate-100);
+  --color-muted: var(--color-corporate-slate-400);
+  --color-border: var(--color-corporate-slate-700);
+  --color-hover: var(--color-corporate-slate-900);
+  --color-accent: var(--color-corporate-blue-800);
+  --color-link: var(--color-corporate-blue-300);
+}
+
+/* === Utility classes === */
+.bg-surface {
+  background-color: var(--color-bg);
+}
+.text-base {
+  color: var(--color-text);
+}
+.text-muted {
+  color: var(--color-muted);
+}
+.border-default {
+  border-color: var(--color-border);
+}
+.bg-hover {
+  background-color: var(--color-hover);
+}
+.bg-accent {
+  background-color: var(--color-accent);
+}
+.text-link {
+  color: var(--color-link);
+}

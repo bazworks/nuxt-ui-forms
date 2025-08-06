@@ -1,0 +1,15 @@
+{
+  "editor.formatOnSave": true,
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "eslint.validate": ["typescript", "vue"],
+  "tailwindCSS.includeLanguages": {
+    "vue": "html",
+    "typescript": "javascript"
+  },
+  "editor.gotoLocation.multipleDefinitions": "goto"
+}
